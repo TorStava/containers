@@ -15,6 +15,10 @@ on:
       - "!apps/**/metadata.yaml"
       - "!apps/**/README.md"
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   simple-checks:
     uses: torstava/containers/.github/workflows/simple-checks.yaml@main
